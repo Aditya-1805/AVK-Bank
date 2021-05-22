@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="/"><span>AVK BANK</span></a>
+            <img id="mobile-cta" class="mobilebutton" src="menu.svg" alt="menu button mobile">
+            <nav>
+                <img id="mobile-exit" class="mobilebutton-exit" src="menu.svg" alt="menu button mobile exit">
+                <ul class="pri-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="Accounts.ejs">Accounts</a></li>
+                    <li><a href="MoneyTransfer.ejs">Money Transfer</a></li>
+                    <li><a href="TransactionHistory.ejs">Transaction History</a></li>
+                </ul>
+                <ul class="sec-nav">
+                    <li><a href="FAQ.ejs">FAQ</a></li>
+                    <li><a href="Contact.ejs">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="pri-home">
+        <div class="container">
+            <div class="left-col">
+                <h2 class="subhead1">WELCOME</h2>
+                <p class="para1">
+                    We assure you that your information is confidential , customers
+                    safety and security is our first priority . We play an important role in financial 
+                    stability and the economy of a country Banks act as payment agents by conducting checking
+                    or current accounts for customers, paying cheques drawn by customers in the bank, 
+                    and collecting cheques deposited to customers' current accounts. 
+                </p>
+            </div>
+            <img class="build" src="building.jpg" alt="Bank Building">
+        </div>
+    </section>
+    <section class="sec-home">
+        <div class="container">
+            <img class="mt" src="home2.jpg" alt="Fund Transfer">
+            <div class="right-col">
+                <h2 class="subhead2">MONEY TRANSFER</h2>
+                <p class="para2">
+                    Online money transfer is the modern-day equivalent of wiring money. You can send
+                    someone money instantaneously simply by transferring money (or the data that represents that money)
+                    from you to another person. Usually involving little more than contact information -- such as a 
+                    cell phone number or an e-mail address -- for the sending and receiving parties tied to a bank account,
+                    online money transfer can be done for a small fee from a secure, Web-based service via any computer 
+                    with Internet access.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="created">
+        <h3>created by @ <span> VEMULAKONDA ADITYA</span></h3>
+    </div>
+
+     <script>
+         const mobilebtn = document.getElementById('mobile-cta')
+               nav = document.querySelector('nav')
+               mobilebtnexit = document.getElementById('mobile-exit');
+        mobilebtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobilebtnexit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+     </script>
+
+</body>
+</html>

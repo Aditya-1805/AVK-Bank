@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="/"><span>AVK BANK</span></a>
+            <img id="mobile-cta" class="mobilebutton" src="menu.svg" alt="menu button mobile">
+            <nav>
+                <img id="mobile-exit" class="mobilebutton-exit" src="menu.svg" alt="menu button mobile exit">
+                <ul class="pri-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="Accounts.ejs">Accounts</a></li>
+                    <li><a href="MoneyTransfer.ejs">Money Transfer</a></li>
+                    <li><a href="TransactionHistory.ejs">Transaction History</a></li>
+                </ul>
+                <ul class="sec-nav">
+                    <li><a href="FAQ.ejs">FAQ</a></li>
+                    <li><a href="Contact.ejs">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+     <script>
+         const mobilebtn = document.getElementById('mobile-cta')
+               nav = document.querySelector('nav')
+               mobilebtnexit = document.getElementById('mobile-exit');
+        mobilebtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobilebtnexit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+     </script>
+
+     <div class="cont">
+         <h2 class="sh1">For More Queries </h2>
+         <h2 class="sh2">Contact us at</h2>
+         <h3 class="n1">Toll Free Number <span>1800 558 5896</span></h3>
+         <h3 class="n2">1800 851 5545</h3>
+         <h2 class="sh3"></h2>
+         <h3 class="mail">Email</h3>
+         <img class="med" src="mail.svg" alt="Email">
+         <h3 class="insta">Instagram</h3>
+         <img class="med" src="insta.svg" alt="Instagram">
+         <h3 class="fb">Facebook</h3>
+         <img class="med" src="fb.svg" alt="Facebook">
+         <h3 class="twr">Twitter</h3>
+         <img class="med" src="twitter.svg" alt="Twitter">
+     </div>
+     <div class="created">
+        <h3>created by @ <span> VEMULAKONDA ADITYA</span></h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  background: whitesmoke;
+  margin: 0;
+}
+
+.created {
+  font-family: 'Krona One', sans-serif;
+  background-color: khaki;
+  color: darkred;
+  text-align: center;
+  font-size: xx-small;
+}
+
+.created span:hover {
+  background-color: darkred;
+  color: khaki;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  font-family: 'Krona One', sans-serif;
+  text-decoration: none;
+  padding: 0.5em;
+  font-weight: bold;
+  color: darkred;
+  font-size: 2em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobilebutton {
+  cursor: pointer;
+}
+
+.navbar .pri-nav {
+  list-style-type: none;
+}
+
+.navbar .sec-nav {
+  list-style-type: none;
+}
+
+.pri-home .left-col {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2em;
+}
+
+.pri-home .left-col .subhead1 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2em;
+  color: darkred;
+  background-color: burlywood;
+  padding: 0.5em;
+}
+
+.pri-home .left-col .para1 {
+  text-align: justify;
+}
+
+.sec-home .right-col {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2em;
+}
+
+.sec-home .right-col .subhead2 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2em;
+  color: darkred;
+  background-color: burlywood;
+  padding: 0.5em;
+}
+
+.sec-home .right-col .para2 {
+  text-align: justify;
+}
+
+.build {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 70%;
+  top: 0%;
+  right: 0%;
+  padding: 1em;
+  background-color: white;
+}
+
+nav ul.pri-nav {
+  margin-top: 2.5em;
+}
+
+nav ul.sec-nav {
+  margin-top: 0em;
+}
+
+nav li a {
+  color: darkred;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  padding: 1em;
+  font-size: 1.2em;
+  text-align: center;
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
+nav li a:hover {
+  background-color: khaki;
+  padding: 0.5em;
+  border-radius: 5em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+.mobilebutton-exit {
+  float: right;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1157px) {
+  .mobilebutton, .mobilebutton-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 300px auto;
+        grid-template-columns: 300px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav ul.pri-nav {
+    margin: 0%;
+    padding: 0.5em;
+  }
+  .navbar nav ul.sec-nav {
+    margin: 0em;
+    padding: 0.5em;
+  }
+  .navbar nav a {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+  }
+}
+
+@media only screen and (min-width: 1157px) {
+  section .container {
+    width: 1157px;
+    margin: auto;
+  }
+  section {
+    padding: 3em;
+  }
+  .pri-home .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .pri-home .container .subhead1 {
+    text-align: left;
+    font-size: 2em;
+    padding: 0.5em;
+  }
+  .pri-home .container .para1 {
+    font-size: 1.5em;
+  }
+  .sec-home .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sec-home .container .subhead2 {
+    text-align: right;
+    font-size: 2em;
+    padding: 0.5em;
+  }
+  .sec-home .container .para2 {
+    font-size: 1.5em;
+  }
+}
+
+.faq {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.faq h3 {
+  background-color: burlywood;
+  padding: 1em;
+  margin: 1em;
+  color: darkred;
+}
+
+.faq p {
+  padding: 0.5em;
+}
+
+.cont {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cont .sh1 {
+  text-align: center;
+  background-color: darkred;
+  padding: 1em;
+  color: white;
+}
+
+.cont .sh2 {
+  text-align: left;
+  background-color: burlywood;
+  padding: 0.5em;
+  color: darkred;
+}
+
+.cont .sh3 {
+  text-align: left;
+  background-color: burlywood;
+  padding: 0.5em;
+  color: darkred;
+}
+
+.cont .n1 {
+  padding: 1em;
+}
+
+.cont .n1 span {
+  color: darkred;
+  padding: 2em;
+}
+
+.cont .n2 {
+  color: darkred;
+  padding-left: 11.5em;
+}
+
+.cont .insta, .cont .fb, .cont .twr, .cont .mail {
+  display: none;
+}
+
+.cont .med {
+  width: 8%;
+  padding: 1.5em;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1157px) {
+  .cont .med {
+    width: 5%;
+  }
+}
+
+.container_transfer {
+  padding: 5em;
+  background-color: khaki;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  color: darkred;
+}
+
+.container_transfer label {
+  width: 180px;
+  clear: left;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.container_transfer input, .container_transfer label {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.container_transfer button {
+  background-color: darkred;
+  border: none;
+  color: white;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-top: 20em;
+  margin-left: -11em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container_transfer button:hover {
+  background-color: white;
+  color: darkred;
+  font-weight: bolder;
+  border-radius: 2em;
+}
+
+@media only screen and (min-width: 530px) {
+  .container_transfer button {
+    margin-top: 4em;
+    margin-left: 13em;
+  }
+}
+
+@media only screen and (min-width: 698px) {
+  .container_transfer button {
+    margin-top: 10em;
+    margin-left: -9.75em;
+  }
+}
+
+.container_acc {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+.container_acc th {
+  text-align: center;
+  padding: 2em;
+  background-color: firebrick;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+}
+
+.container_acc tr {
+  text-align: center;
+  background-color: khaki;
+}
+
+.container_acc td {
+  padding: 0.75em;
+  color: darkred;
+  font-weight: bolder;
+}
+
+.container_acc .dataitems:hover {
+  background-color: white;
+}
+
+.container_th {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+.container_th th {
+  text-align: center;
+  padding: 2em;
+  background-color: firebrick;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+}
+
+.container_th tr {
+  text-align: center;
+  background-color: khaki;
+}
+
+.container_th td {
+  padding: 0.75em;
+  color: darkred;
+  font-weight: bolder;
+}
+
+.container_th .rh:hover {
+  background-color: white;
+}
+/*# sourceMappingURL=main.css.map */

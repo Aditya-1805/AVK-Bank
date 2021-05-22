@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="/"><span>AVK BANK</span></a>
+            <img id="mobile-cta" class="mobilebutton" src="menu.svg" alt="menu button mobile">
+            <nav>
+                <img id="mobile-exit" class="mobilebutton-exit" src="menu.svg" alt="menu button mobile exit">
+                <ul class="pri-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="Accounts.ejs">Accounts</a></li>
+                    <li><a href="MoneyTransfer.ejs">Money Transfer</a></li>
+                    <li><a href="TransactionHistory.ejs">Transaction History</a></li>
+                </ul>
+                <ul class="sec-nav">
+                    <li><a href="FAQ.ejs">FAQ</a></li>
+                    <li><a href="Contact.ejs">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <table class="container_acc">
+        <tr class="head">
+            <th>NAME</th>
+            <th>ACCOUNT ID</th>
+            <th>BALANCE</th>
+        </tr>
+        <% for(let i=0;i<11;i++) {%>
+        <tr class="dataitems">
+            <td><%= data.Name[i] %></td>
+            <td><%= data.AccountId[i] %></td>
+            <td><%= data.balance[i] %></td> 
+        </tr>
+        <% } %>
+    </table>
+     <script>
+         ;
+         const mobilebtn = document.getElementById('mobile-cta')
+               nav = document.querySelector('nav')
+               mobilebtnexit = document.getElementById('mobile-exit');
+        mobilebtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobilebtnexit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+     </script>
+
+</body>
+</html>
